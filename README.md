@@ -4,7 +4,17 @@
 
 #CLI Command step 
 - composer install 
-- 
+- http://localhost:8000/oauth/token
+- {
+   "grant_type":"password",
+   "client_id":"2",
+   "client_secret":"jGh0u2lF6rG93ogLWMEtntRKbP16otfJLHVfvgR3",
+   "username":"alax@mail.com",
+   "password":"asdf@1234",
+   "scope":""
+}
+
+
 
 ## About Laravel
 
