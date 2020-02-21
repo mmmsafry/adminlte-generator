@@ -4,15 +4,19 @@
 
 #CLI Command step 
 - composer install 
+- php artisan migrate 
+- php artisan db:seed --class=UsersTableSeeder
+- copy keys to storage folder (request)
 - http://localhost:8000/oauth/token
 - {
-   "grant_type":"password",
-   "client_id":"2",
-   "client_secret":"jGh0u2lF6rG93ogLWMEtntRKbP16otfJLHVfvgR3",
-   "username":"alax@mail.com",
-   "password":"asdf@1234",
-   "scope":""
-}
+     "grant_type":"password",
+     "client_id":"2",
+     "client_secret":"CDM9sh6rilKkqSB6hssHhFAK3jT7pz5htD2CcdAR",
+     "username":"admin@mail.com",
+     "password":"asdf@1234",
+     "scope":""
+  }
+
 
 
 
