@@ -21,3 +21,5 @@ Route::get('/home', 'HomeController@index')->middleware('verified');
 
 
 Route::resource('members', 'MemberController');
+
+Route::resource('users', 'UserController');

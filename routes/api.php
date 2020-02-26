@@ -15,8 +15,15 @@ use Illuminate\Http\Request;
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
 
-    Route::resource('members', 'MemberAPIController');
+
 
 });
 
 
+Route::resource('members', 'MemberAPIController');
+Route::get('send', 'MemberAPIController@rabbitMQ_Send');
+Route::get('receive', 'MemberAPIController@rabbitMQ_receive');
+Route::post('login', 'AuthController@issueToken');
+
+
+Route::resource('users', 'UserAPIController');
