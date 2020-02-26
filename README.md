@@ -1,11 +1,24 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+#Added By Developer 
+- project_db : import this db
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+
+#CLI Command step 
+- composer install 
+- php artisan migrate 
+- php artisan db:seed --class=UsersTableSeeder
+- copy keys to storage folder (request)
+- http://localhost:8000/oauth/token
+- {
+     "grant_type":"password",
+     "client_id":"2",
+     "client_secret":"CDM9sh6rilKkqSB6hssHhFAK3jT7pz5htD2CcdAR",
+     "username":"admin@mail.com",
+     "password":"asdf@1234",
+     "scope":""
+  }
+
+
+
 
 ## About Laravel
 

@@ -13,6 +13,7 @@ use Illuminate\Http\Request;
 |
 */
 
+
 Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
@@ -27,3 +28,11 @@ Route::post('login', 'AuthController@issueToken');
 
 
 Route::resource('users', 'UserAPIController');
+
+Route::group(['middleware' => 'auth:api'], function () {
+
+});
+
+Route::resource('members', 'MemberAPIController');
+Route::resource('configurations', 'ConfigurationAPIController');
+
